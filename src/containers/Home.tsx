@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Box, Grid, Hidden, Typography, Zoom, Button } from "@material-ui/core";
 import Typist from "react-typist";
+import { Link } from "react-scroll";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 import Footer from "./Footer";
@@ -96,13 +97,14 @@ function Home() {
             disableElevation
             className={classes.prim_button}
             startIcon={<ExpandMoreIcon />}
-            href="#about"
           >
-            Explore Me!
+            <Link to="about" spy={true} smooth={true}>
+              Explore Me!
+            </Link>
           </Button>
         </Grid>
       </Grid>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

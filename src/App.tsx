@@ -9,7 +9,7 @@ function App() {
     <React.Fragment>
       <Home />
       <About />
-      <Footer />
+      {/* <Footer /> */}
     </React.Fragment>
   );
 }
