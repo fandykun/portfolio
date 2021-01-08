@@ -9,10 +9,8 @@ import Footer from "./Footer";
 const useStyles = makeStyles({
   root: {
     flexGrow: 1,
-    position: "absolute",
-    left: "50%",
-    top: "50%",
-    transform: "translate(-50%, -50%)",
+    height: "100vh",
+    alignItems: "center",
     textAlign: "center",
   },
   jobTitle: {
@@ -22,7 +20,7 @@ const useStyles = makeStyles({
   },
   prim_button: {
     margin: "20px",
-    borderRadius: "8px",
+    // borderRadius: "8px",
     color: "#FFFFFF",
     transition: "0.3s",
     background: "#e22a25",
@@ -32,6 +30,8 @@ const useStyles = makeStyles({
     },
   },
 });
+
+// Source: https://www.jonphillips.ca/
 
 function Home() {
   const classes = useStyles();
@@ -65,14 +65,9 @@ function Home() {
 
   return (
     <div>
-      <Grid container className={classes.root} spacing={2}>
+      <Grid container className={classes.root} id="home">
         <Grid item xs={12}>
-          <Grid
-            container
-            // direction="column"
-            justify="center"
-            // alignItems="center"
-          >
+          <Grid container justify="center">
             <Zoom in={true} style={{ transitionDelay: "200ms" }}>
               <Grid>
                 <Hidden mdUp>
@@ -107,7 +102,7 @@ function Home() {
           </Button>
         </Grid>
       </Grid>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

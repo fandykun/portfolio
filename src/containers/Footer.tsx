@@ -8,7 +8,7 @@ import MailIcon from "@material-ui/icons/Mail";
 
 const useStyles = makeStyles({
   fixed: {
-    position: "fixed",
+    position: "absolute",
   },
   root: {
     textAlign: "center",
@@ -56,13 +56,13 @@ function Footer() {
   const instagramLink = "https://www.instagram.com/fandykun/";
   const linkedInLink = "https://linkedin.com/in/fandy-kuncoro-adianto/";
   const githubLink = "https://github.com/fandykun/";
-  const mailLink = "mailto:fandy19061999@gmail.com";
+  const mailLink = "mailto:fandy.17051@mhs.its.ac.id";
 
   const twitterTitle = "Fandykun on Twitter";
   const instagramTitle = "Fandykun on Instagram";
   const linkedInTitle = "Fandykun on LinkedIn";
   const githubTitle = "Fandykun on Github";
-  const mailTitle = "Mail to fandy19061999@gmail.com";
+  const mailTitle = "Mail to fandy.17051@mhs.its.ac.id";
 
   const handleIconHover = (type: string) => {
     switch (type) {

@@ -1,10 +1,17 @@
 import React from "react";
-import Button from '@material-ui/core/Button'
 
-import Home from './containers/Home'
- 
+import Home from "./containers/Home";
+import About from "./containers/About";
+import Footer from "./containers/Footer";
+
 function App() {
-  return <Home />
+  return (
+    <React.Fragment>
+      <Home />
+      <About />
+      <Footer />
+    </React.Fragment>
+  );
 }
 
 export default App;
