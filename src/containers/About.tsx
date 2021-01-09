@@ -1,6 +1,7 @@
 import { Box, Chip, Grid, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import React from "react";
+import Container from "../components/Container/Container";
 
 const useStyles = makeStyles({
   root: {
@@ -60,22 +61,12 @@ function About() {
   ];
 
   return (
-    <Grid container className={classes.root} spacing={0} id="about">
-      <Grid item xs={12}>
-        <Grid container justify="center">
-          <Grid item>
-            <Typography variant="h2" component="h3">
-              <Box fontWeight="fontWeightBold">About me</Box>
-            </Typography>
-            <Typography variant="subtitle1" component="span">
-              <Box textAlign="center" fontStyle="italic">
-                Let's get to know me more...
-              </Box>
-            </Typography>
-          </Grid>
-        </Grid>
-      </Grid>
-
+    <Container
+      id="about"
+      title="About me"
+      subTitle="Let's get to know me more..."
+      primary
+    >
       <Grid item xs={12}>
         <Grid container style={{ padding: "2rem 64px" }}>
           <Grid item xs={8}>
@@ -155,7 +146,7 @@ function About() {
           </Grid>
         </Grid>
       </Grid>
-    </Grid>
+    </Container>
   );
 }
 
