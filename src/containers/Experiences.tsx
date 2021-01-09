@@ -1,43 +1,7 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-
 import Container from "../components/Container/Container";
 import CustomTimelineItems from "../components/CustomTimeline/CustomTimelineItems";
 import CustomTimelineItem from "../components/CustomTimeline/CustomTimelineItem";
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    padding: "3rem 0",
-  },
-  paper: {
-    padding: "6px 16px",
-    "&:hover": {
-      cursor: "pointer",
-      boxShadow: "1px 8px 12px grey",
-      WebkitTransition: "box-shadow .2s ease-in",
-    },
-  },
-  secondaryTail: {
-    backgroundColor: theme.palette.secondary.main,
-  },
-  oppositeContent: {
-    flex: 0.5,
-  },
-  gridContainer: {
-    padding: "2rem 64px",
-  },
-  mainColor: {
-    color: "#e22a25",
-  },
-  experienceChip: {
-    margin: "0.5rem 0.5rem",
-    color: "#ffffff",
-    backgroundColor: "#e22a25",
-    fontWeight: 700,
-    textTransform: "uppercase",
-  },
-}));
 
 export default function Experiences() {
   const ExperienceLists = [

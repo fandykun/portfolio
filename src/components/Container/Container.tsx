@@ -39,7 +39,9 @@ const Container: React.FC<Props> = ({
         <Grid container justify="center">
           <Grid item>
             <Typography variant="h2" component="h3">
-              <Box fontWeight="fontWeightBold">{title}</Box>
+              <Box fontWeight="fontWeightBold" textAlign="center">
+                {title}
+              </Box>
             </Typography>
             <Typography variant="subtitle1" component="span">
               <Box textAlign="center" fontStyle="italic">
