@@ -21,11 +21,12 @@ interface Timeline {
   date: string;
   title: string;
   tags: string[];
-  descriptions: string[];
+  descriptions: string[] | string;
 }
 
 interface Props {
   timeline: Timeline;
+  primary?: boolean;
 }
 
 const useStyles = makeStyles({
@@ -54,15 +55,49 @@ const useStyles = makeStyles({
     fontWeight: 700,
     textTransform: "uppercase",
   },
+  primaryColor: {
+    color: "#ffffff",
+  },
   secondaryColor: {
     color: "#e22a25",
   },
+  description: {
+    padding: "16px 32px",
+  },
 });
 
-const CustomTimelineItem: React.FC<Props> = ({ timeline }) => {
+const CustomTimelineItem: React.FC<Props> = ({ timeline, primary }) => {
   const classes = useStyles();
   const imageSize = 64;
 
+  const handleDescriptions = (desc: string[] | string) => {
+    if (typeof desc === "object") {
+      return (
+        <List>
+          {desc.map((description) => (
+            <ListItem alignItems="flex-start">
+              <ListItemIcon>
+                <ChevronRightIcon />
+              </ListItemIcon>
+              <ListItemText
+                primary={
+                  <Typography variant="body2">
+                    <Box>{description}</Box>
+                  </Typography>
+                }
+              />
+            </ListItem>
+          ))}
+        </List>
+      );
+    } else {
+      return (
+        <Typography variant="body2" className={classes.description}>
+          <Box>{desc}</Box>
+        </Typography>
+      );
+    }
+  };
   return (
     <TimelineItem>
       <TimelineOppositeContent className={classes.oppositeContent}>
@@ -72,12 +107,23 @@ const CustomTimelineItem: React.FC<Props> = ({ timeline }) => {
           width={imageSize}
           height="auto"
         />
-        <Typography variant="h6" className={classes.secondaryColor}>
-          {timeline.role}
-        </Typography>
-        <Typography variant="body1" color="textSecondary">
-          {timeline.date}
-        </Typography>
+        {primary ? (
+          <React.Fragment>
+            <Typography variant="h6">{timeline.role}</Typography>
+            <Typography variant="body1" className={classes.primaryColor}>
+              {timeline.date}
+            </Typography>
+          </React.Fragment>
+        ) : (
+          <React.Fragment>
+            <Typography variant="h6" className={classes.secondaryColor}>
+              {timeline.role}
+            </Typography>
+            <Typography variant="body1" color="textSecondary">
+              {timeline.date}
+            </Typography>
+          </React.Fragment>
+        )}
       </TimelineOppositeContent>
       <TimelineSeparator>
         <TimelineDot variant="outlined" />
@@ -92,22 +138,7 @@ const CustomTimelineItem: React.FC<Props> = ({ timeline }) => {
             <Chip label={tag} className={classes.primaryChip} />
           ))}
 
-          <List>
-            {timeline.descriptions.map((description) => (
-              <ListItem alignItems="flex-start">
-                <ListItemIcon>
-                  <ChevronRightIcon />
-                </ListItemIcon>
-                <ListItemText
-                  primary={
-                    <Typography variant="body2">
-                      <Box>{description}</Box>
-                    </Typography>
-                  }
-                />
-              </ListItem>
-            ))}
-          </List>
+          {handleDescriptions(timeline.descriptions)}
         </Paper>
       </TimelineContent>
     </TimelineItem>
