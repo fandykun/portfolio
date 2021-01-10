@@ -117,7 +117,7 @@ function About() {
           </Grid>
 
           <Grid item lg={6} md={12}>
-            <Grid container spacing={4}>
+            <Grid container spacing={2}>
               <Grid item xs={12}>
                 <Typography variant="h5" component="h6">
                   <Box fontWeight="fontWeightBold">Tech</Box>
@@ -131,7 +131,7 @@ function About() {
             </Grid>
           </Grid>
           <Grid item lg={6} md={12}>
-            <Grid container spacing={4}>
+            <Grid container spacing={2}>
               <Grid item xs={12}>
                 <Typography variant="h5" component="h6">
                   <Box fontWeight="fontWeightBold">Programming Concept</Box>

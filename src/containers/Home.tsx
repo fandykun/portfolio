@@ -5,7 +5,7 @@ import Typist from "react-typist";
 import { Link } from "react-scroll";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
-import Footer from "./Footer";
+import Contact from "./Contact";
 
 const useStyles = makeStyles({
   root: {
@@ -41,6 +41,7 @@ function Home() {
   const [indexNumber, setIndexNumber] = useState(0);
 
   const listJobTitle = [
+    "Undergraduate Student",
     "Software Engineer",
     "Backend Engineer",
     "Frontend Engineer",
@@ -48,15 +49,17 @@ function Home() {
 
   const myTypist = (
     <Typist
-      avgTypingDelay={90}
-      startDelay={100}
+      avgTypingDelay={60}
       onTypingDone={() => {
         setIsChanged(false);
         setIndexNumber(indexNumber + 1);
       }}
     >
-      {listJobTitle[indexNumber % 3]}
-      <Typist.Backspace count={17} delay={200} />
+      {listJobTitle[indexNumber % 4]}
+      <Typist.Backspace
+        count={listJobTitle[indexNumber % 4].length}
+        delay={500}
+      />
     </Typist>
   );
 
@@ -98,13 +101,13 @@ function Home() {
             className={classes.prim_button}
             startIcon={<ExpandMoreIcon />}
           >
-            <Link to="about" spy={true} smooth={true}>
+            <Link to="about" smooth={true}>
               Explore Me!
             </Link>
           </Button>
         </Grid>
       </Grid>
-      <Footer />
+      <Contact />
     </div>
   );
 }

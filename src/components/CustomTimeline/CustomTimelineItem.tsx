@@ -38,9 +38,11 @@ const useStyles = makeStyles({
       transform: "translateX(-5px)",
       transition: "transform .2s ease, box-shadow .2s ease-in",
     },
+    marginTop: "16px",
   },
   oppositeContent: {
     flex: 0.5,
+    marginTop: "16px",
   },
   primaryChip: {
     margin: "0.5rem 0.5rem",

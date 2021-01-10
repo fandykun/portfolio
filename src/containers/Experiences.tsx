@@ -26,6 +26,7 @@ export default function Experiences() {
       tags: ["Python", "AI", "Machine Learning"],
       descriptions: [
         "Introduced machine learning concept to a new college student interested in our lab using Orange for implementation",
+        "Assist the junior student on subjects related to our lab and sometimes joining a competition to improving our related skills",
       ],
     },
   ];

@@ -4,6 +4,8 @@ import Home from "./containers/Home";
 import About from "./containers/About";
 import Experiences from "./containers/Experiences";
 import Achievements from "./containers/Achievements";
+import Projects from "./containers/Projects";
+import Footer from "./containers/Footer";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <About />
       <Experiences />
       <Achievements />
+      <Projects />
+      <Footer />
     </React.Fragment>
   );
 }
