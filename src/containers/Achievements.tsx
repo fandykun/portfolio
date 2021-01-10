@@ -10,7 +10,7 @@ function Achievements() {
       role: "Top 90 Teams",
       date: "October 2017",
       title: "2017 Asia Jakarta - Indonesia National Contest",
-      tags: ["Competitive Programming", "C", "C++"],
+      tags: ["CP", "Competitive", "Programming", "C", "C++"],
       descriptions: "A national competitive programming contest.",
     },
     {
