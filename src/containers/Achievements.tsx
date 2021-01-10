@@ -24,7 +24,7 @@ function Achievements() {
     },
     {
       path: "logo-computerun-mini.png",
-      role: "Finalist",
+      role: "2nd Runner-Up",
       date: "January 2021",
       title: "Mobile Apps Development Computerun 2020",
       tags: ["Android", "UI / UX", "Java", "Python", "AI"],

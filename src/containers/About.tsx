@@ -44,6 +44,7 @@ function About() {
     "Tensorflow",
     "Keras",
     "ROS",
+    "Linux",
     "Git",
   ];
 
@@ -71,16 +72,16 @@ function About() {
         <Grid container style={{ padding: "2rem 64px" }}>
           <Grid item lg={8} md={12}>
             <Typography variant="h3" component="h4">
-              <Box fontWeight="fontWeightBold">Summary</Box>
+              <Box fontWeight="fontWeightBold">Introduce myself</Box>
             </Typography>
             <Typography variant="body1" component="span">
               <Box>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl
-                purus in mollis nunc sed id. Lobortis elementum nibh tellus
-                molestie nunc non. Nunc sed id semper risus. Amet massa vitae
-                tortor condimentum lacinia quis vel. Convallis convallis tellus
-                id interdum velit.
+                Hi, I'm Fandy Kuncoro Adianto. An undergraduate computer science
+                student. I’m highly interested in programming especially
+                software development and artificial intelligence. This website
+                is part of my digital progress history for my future self.
+                Sometimes I want to look back and find out what I was actually
+                doing, day-to-day, and how I really felt back then.
               </Box>
             </Typography>
           </Grid>

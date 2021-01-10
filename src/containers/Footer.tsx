@@ -23,7 +23,7 @@ function Footer() {
           <Grid item>
             <Typography variant="subtitle1" component="span">
               <Box textAlign="center">
-                Copyright ©2021 | Made with{" "}
+                Copyright © 2021 | Made with{" "}
                 <FavoriteBorderIcon style={{ fontSize: "1rem" }} /> by Fandykun
               </Box>
             </Typography>
