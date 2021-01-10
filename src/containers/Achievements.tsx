@@ -29,7 +29,7 @@ function Achievements() {
       title: "Mobile Apps Development Computerun 2020",
       tags: ["Android", "UI / UX", "Java", "Python", "AI"],
       descriptions:
-        "A Mobile Application Development held by Binus University followed by more than 100 teams in Indonesia. Selected as a finalist by implemented face recognition as part of problem-solving cases.",
+        "A Mobile Application Development held by Binus University followed by more than 100 teams in Indonesia. We won this competition and finished as 2nd runner-up. We have implemented face recognition as part of problem-solving cases.",
     },
   ];
 
