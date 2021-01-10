@@ -76,12 +76,12 @@ function About() {
             </Typography>
             <Typography variant="body1" component="span">
               <Box>
-                Hi, I'm Fandy Kuncoro Adianto. An undergraduate computer science
-                student. I’m highly interested in programming especially
-                software development and artificial intelligence. This website
-                is part of my digital progress history for my future self.
-                Sometimes I want to look back and find out what I was actually
-                doing, day-to-day, and how I really felt back then.
+                Hi, I'm Fandy Kuncoro Adianto, an undergraduate computer science
+                student. I'm highly interested in programming especially
+                software development and artificial intelligence. I excited,
+                quietly curious, and interested in problem-solving it. Right
+                now, I'm looking for new experiences as part of being an expert
+                coder in the future.
               </Box>
             </Typography>
           </Grid>
