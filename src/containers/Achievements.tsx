@@ -20,7 +20,7 @@ function Achievements() {
       title: "Indonesia Robot Contest 2019 & 2020",
       tags: ["Robotics", "C++", "ROS"],
       descriptions:
-        "A National Robot Contest held by Ministry of Research, Technology and Higher Education followed by a lot of top University in Indonesia. Finished as 1st Place on wheeled robot soccer competition.",
+        "A National Robot Contest held by the Ministry of Research, Technology, and Higher Education followed by a lot of top universities in Indonesia. Finished as 1st Place in a wheeled robot soccer competition.",
     },
     {
       path: "logo-computerun-mini.png",

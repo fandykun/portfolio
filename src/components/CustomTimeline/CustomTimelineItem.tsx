@@ -35,7 +35,8 @@ const useStyles = makeStyles({
     "&:hover": {
       cursor: "pointer",
       boxShadow: "1px 8px 12px grey",
-      WebkitTransition: "box-shadow .2s ease-in",
+      transform: "translateX(-5px)",
+      transition: "transform .2s ease, box-shadow .2s ease-in",
     },
   },
   oppositeContent: {
@@ -62,7 +63,7 @@ const useStyles = makeStyles({
     color: "#e22a25",
   },
   description: {
-    padding: "16px 32px",
+    padding: "16px 16px",
   },
 });
 

@@ -69,7 +69,7 @@ function About() {
     >
       <Grid item xs={12}>
         <Grid container style={{ padding: "2rem 64px" }}>
-          <Grid item xs={8}>
+          <Grid item lg={8} md={12}>
             <Typography variant="h3" component="h4">
               <Box fontWeight="fontWeightBold">Summary</Box>
             </Typography>
@@ -123,7 +123,7 @@ function About() {
                   <Box fontWeight="fontWeightBold">Tech</Box>
                 </Typography>
               </Grid>
-              <Grid item xs={9}>
+              <Grid item lg={9} md={12}>
                 {programmingList.map((list) => (
                   <Chip label={list} className={classes.skillsChip} />
                 ))}
@@ -137,7 +137,7 @@ function About() {
                   <Box fontWeight="fontWeightBold">Programming Concept</Box>
                 </Typography>
               </Grid>
-              <Grid item xs={9}>
+              <Grid item lg={9} md={12}>
                 {conceptList.map((list) => (
                   <Chip label={list} className={classes.skillsChip} />
                 ))}
