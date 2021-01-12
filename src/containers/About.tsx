@@ -78,10 +78,10 @@ function About() {
               <Box>
                 Hi, I'm Fandy Kuncoro Adianto, an undergraduate computer science
                 student. I'm highly interested in programming especially
-                software development and artificial intelligence. I excited,
-                quietly curious, and interested in problem-solving it. Right
-                now, I'm looking for new experiences as part of being an expert
-                coder in the future.
+                software development and artificial intelligence. I feel
+                excited, quietly curious, and interested in problem-solving it.
+                Right now, I'm looking for new experiences as part of being an
+                expert coder in the future.
               </Box>
             </Typography>
           </Grid>

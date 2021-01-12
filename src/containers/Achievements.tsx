@@ -24,12 +24,12 @@ function Achievements() {
     },
     {
       path: "logo-computerun-mini.png",
-      role: "2nd Runner-Up",
+      role: "3rd Place",
       date: "January 2021",
       title: "Mobile Apps Development Computerun 2020",
       tags: ["Android", "UI / UX", "Java", "Python", "AI"],
       descriptions:
-        "A Mobile Application Development held by Binus University followed by more than 100 teams in Indonesia. We won this competition and finished as 2nd runner-up. We have implemented face recognition as part of problem-solving cases.",
+        "A Mobile Application Development held by Binus University followed by more than 100 teams in Indonesia. We won this competition and finished as 3rd Place. We have implemented face recognition as part of problem-solving cases.",
     },
   ];
 
