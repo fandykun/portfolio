@@ -39,6 +39,7 @@ function About() {
     "Django",
     "HTML",
     "CSS",
+    "Node.js",
     "React.js",
     "OpenCV",
     "Tensorflow",

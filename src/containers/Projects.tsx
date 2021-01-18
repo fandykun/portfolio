@@ -66,7 +66,7 @@ function Projects() {
     },
     {
       name: "Stack Game",
-      tags: ["Javascript", "Three.js", "Socket.io"],
+      tags: ["Javascript", "Node.js", "Three.js", "Socket.io"],
       description:
         "A web-based game created using Three.js library. This game inspired by a stack game on mobile applications but build on multiplayer via socket.",
     },
