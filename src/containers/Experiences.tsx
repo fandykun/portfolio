@@ -6,11 +6,22 @@ import CustomTimelineItem from "../components/CustomTimeline/CustomTimelineItem"
 export default function Experiences() {
   const ExperienceLists = [
     {
+      path: "logo-dptsi.png",
+      role: "Software Engineer",
+      date: "Februari 2021 - May 2021",
+      title: "Software Engineer Internship at DPTSI-ITS",
+      tags: ["PHP", "Laravel"],
+      descriptions: [
+        "Improved efficiency by writing script to generate each semester report of finance",
+        "Built application to manage finance student report",
+      ],
+    },
+    {
       path: "logo-iris.png",
       role: "Senior Programmer",
       date: "October 2018 - December 2020",
       title: "IRIS ITS Robotics Team",
-      tags: ["C++", "GUI", "ROS", "Robotics"],
+      tags: ["C++", "GUI", "ROS", "Robotics", "Computer Vision"],
       descriptions: [
         "Developed Graphical User Interface (GUI) Application using C++ for handled communication using UDP (unicast & multicast) socket",
         "Refactor codebase of all robot program from functional programming into object oriented programming with singleton design pattern",
@@ -21,7 +32,7 @@ export default function Experiences() {
     {
       path: "logo-kcv.png",
       role: "Administrator",
-      date: "January 2019 - Present",
+      date: "January 2019 - July 2021",
       title: "Intelligent Computation and Vision Laboratory",
       tags: ["Python", "AI", "Machine Learning"],
       descriptions: [

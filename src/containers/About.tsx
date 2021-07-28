@@ -80,10 +80,9 @@ function About() {
             <Typography variant="body1" component="span">
               <Box>
                 Hi, I'm Fandy Kuncoro Adianto, an undergraduate computer science
-                student. I'm highly interested in programming especially
-                software development and artificial intelligence. I feel
-                excited, quietly curious, and interested in problem-solving it.
-                Right now, I'm looking for new experiences as part of being an
+                student. I'm highly interested and so excited about programming
+                especially software development and artificial intelligence.
+                Right now, I'm looking for a new experience as part of being an
                 expert coder in the future.
               </Box>
             </Typography>
