@@ -33,6 +33,8 @@ function About() {
     "PHP",
     "Javascript",
     "Typescript",
+    "Java",
+    "Ruby",
     "SQL",
     "Laravel",
     "Phalcon",
