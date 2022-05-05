@@ -41,7 +41,6 @@ function Home() {
   const [indexNumber, setIndexNumber] = useState(0);
 
   const listJobTitle = [
-    "Undergraduate Student",
     "Software Engineer",
     "Backend Engineer",
     "Frontend Engineer",
@@ -55,9 +54,9 @@ function Home() {
         setIndexNumber(indexNumber + 1);
       }}
     >
-      {listJobTitle[indexNumber % 4]}
+      {listJobTitle[indexNumber % 3]}
       <Typist.Backspace
-        count={listJobTitle[indexNumber % 4].length}
+        count={listJobTitle[indexNumber % 3].length}
         delay={500}
       />
     </Typist>

@@ -102,10 +102,10 @@ function About() {
               </Box>
             </Typography>
             <Typography variant="body1" component="span">
-              <Box>June 2017 - August 2021 (Expected)</Box>
+              <Box>June 2017 - September 2021</Box>
             </Typography>
             <Typography variant="body1" component="span">
-              <Box>Bachelor of Science in Computer Science Candidate</Box>
+              <Box>Bachelor of Computer Science</Box>
             </Typography>
           </Grid>
         </Grid>
