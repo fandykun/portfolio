@@ -73,13 +73,13 @@ const Contact: React.FC<Props> = ({ position }) => {
   const instagramLink = "https://www.instagram.com/fandykun/";
   const linkedInLink = "https://linkedin.com/in/fandy-kuncoro-adianto/";
   const githubLink = "https://github.com/fandykun/";
-  const mailLink = "mailto:fandy.17051@mhs.its.ac.id";
+  const mailLink = "mailto:fandy.kuncoro@gmail.com";
 
   const twitterTitle = "Fandykun on Twitter";
   const instagramTitle = "Fandykun on Instagram";
   const linkedInTitle = "Fandykun on LinkedIn";
   const githubTitle = "Fandykun on Github";
-  const mailTitle = "Mail to fandy.17051@mhs.its.ac.id";
+  const mailTitle = "Mail to fandy.kuncoro@gmail.com";
 
   const handleIconHover = (type: string) => {
     switch (type) {
@@ -132,9 +132,8 @@ const Contact: React.FC<Props> = ({ position }) => {
         <a
           href={twitterLink}
           title={twitterTitle}
-          className={`${
-            position ? classes.secondaryLink : classes.primaryLink
-          } ${twitterHover ? classes.twitterHover : "null"}`}
+          className={`${position ? classes.secondaryLink : classes.primaryLink
+            } ${twitterHover ? classes.twitterHover : "null"}`}
           onMouseEnter={() => handleIconHover("twitter")}
           onMouseLeave={() => handleIconNotHover("twitter")}
         >
@@ -143,9 +142,8 @@ const Contact: React.FC<Props> = ({ position }) => {
         <a
           href={instagramLink}
           title={instagramTitle}
-          className={`${
-            position ? classes.secondaryLink : classes.primaryLink
-          } ${instagramHover ? classes.instagramHover : "null"}`}
+          className={`${position ? classes.secondaryLink : classes.primaryLink
+            } ${instagramHover ? classes.instagramHover : "null"}`}
           onMouseEnter={() => handleIconHover("instagram")}
           onMouseLeave={() => handleIconNotHover("instagram")}
         >
@@ -154,9 +152,8 @@ const Contact: React.FC<Props> = ({ position }) => {
         <a
           href={linkedInLink}
           title={linkedInTitle}
-          className={`${
-            position ? classes.secondaryLink : classes.primaryLink
-          } ${linkedInHover ? classes.linkedInHover : "null"}`}
+          className={`${position ? classes.secondaryLink : classes.primaryLink
+            } ${linkedInHover ? classes.linkedInHover : "null"}`}
           onMouseEnter={() => handleIconHover("linkedIn")}
           onMouseLeave={() => handleIconNotHover("linkedIn")}
         >
@@ -165,9 +162,8 @@ const Contact: React.FC<Props> = ({ position }) => {
         <a
           href={githubLink}
           title={githubTitle}
-          className={`${
-            position ? classes.secondaryLink : classes.primaryLink
-          } ${githubHover ? classes.githubHover : "null"}`}
+          className={`${position ? classes.secondaryLink : classes.primaryLink
+            } ${githubHover ? classes.githubHover : "null"}`}
           onMouseEnter={() => handleIconHover("github")}
           onMouseLeave={() => handleIconNotHover("github")}
         >
@@ -176,9 +172,8 @@ const Contact: React.FC<Props> = ({ position }) => {
         <a
           href={mailLink}
           title={mailTitle}
-          className={`${
-            position ? classes.secondaryLink : classes.primaryLink
-          } ${mailHover ? classes.mailHover : "null"}`}
+          className={`${position ? classes.secondaryLink : classes.primaryLink
+            } ${mailHover ? classes.mailHover : "null"}`}
           onMouseEnter={() => handleIconHover("mail")}
           onMouseLeave={() => handleIconNotHover("mail")}
         >
